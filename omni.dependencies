@@ -4,7 +4,7 @@
 		"repository":"LineageOS/android_device_qcom_common",
 		"target_path":"device/qcom/common",
 		"revision":"cm-14.1"
-	}
+	},
         {       "remote":"github",
                 "repository":"LineageOS/android_device_generic_goldfish",
                 "target_path":"device/generic/goldfish",
