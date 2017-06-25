@@ -19,3 +19,10 @@ PRODUCT_COPY_FILES += \
 
 $(call inherit-product, build/target/product/full.mk)
 
+
+PRODUCT_DEVICE := h870
+PRODUCT_NAME := omni_h870
+PRODUCT_BRAND := lge
+PRODUCT_MODEL := h870
+PRODUCT_MANUFACTURER := lge
+
