@@ -9,7 +9,7 @@ $(call inherit-product, device/lge/h870/omni_h870.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := h870
-PRODUCT_NAME := omni_h870
+PRODUCT_NAME := h870
 PRODUCT_BRAND := lge
 PRODUCT_MODEL := h870
 PRODUCT_MANUFACTURER := lge
