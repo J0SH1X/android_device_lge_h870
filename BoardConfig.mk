@@ -3,14 +3,24 @@ USE_CAMERA_STUB := true
 # inherit from the proprietary version
 -include vendor/lge/h870/BoardConfigVendor.mk
 
-TARGET_ARCH := arm
-TARGET_NO_BOOTLOADER := true
-TARGET_BOARD_PLATFORM := unknown
-TARGET_CPU_ABI := armeabi-v7a
-TARGET_CPU_ABI2 := armeabi
-TARGET_ARCH_VARIANT := armv7-a-neon
-TARGET_CPU_VARIANT := cortex-a7
+
+
+TARGET_KERNEL_SOURCE := kernel/lge/msm8996
+TARGET_KERNEL_CONFIG := lucye_global_com_defconfig
+
+
+TARGET_ARCH := arm64
+TARGET_ARCH_VARIANT := armv8-a
+TARGET_CPU_ABI := arm64-v8a
+TARGET_CPU_ABI2 :=
+TARGET_CPU_VARIANT := kryo
 TARGET_CPU_SMP := true
+
+TARGET_2ND_ARCH := arm
+TARGET_2ND_ARCH_VARIANT := armv7-a-neon
+TARGET_2ND_CPU_ABI := armeabi-v7a
+TARGET_2ND_CPU_ABI2 := armeabi
+TARGET_2ND_CPU_VARIANT := cortex-a53
 ARCH_ARM_HAVE_TLS_REGISTER := true
 
 TARGET_BOOTLOADER_BOARD_NAME := h870
@@ -34,9 +44,11 @@ BOARD_HAS_LARGE_FILESYSTEM := true
 TARGET_USERIMAGES_USE_EXT4 := true
 TARHET_USERIMAGES_USE_F2FS := true
 
-TARGET_PREBUILT_KERNEL := device/lge/h870/kernel
+#TARGET_PREBUILT_KERNEL := device/lge/h870/kernel
 #COMMENT THIS OUT FOR NOW
 #BOARD_HAS_NO_SELECT_BUTTON := true
+
+
 
 
 #TWRP
