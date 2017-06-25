@@ -6,8 +6,10 @@ USE_CAMERA_STUB := true
 
 
 TARGET_KERNEL_SOURCE := kernel/lge/msm8996
-TARGET_KERNEL_CONFIG := lucye_global_com_defconfig
-
+#TARGET_KERNEL_CONFIG := lucye_global_com_defconfig
+TARGET_KERNEL_ARCH := arm64
+TARGET_KERNEL_HEADER_ARCH := arm64
+TARGET_KERNEL_DEVICE_DEFCONFIG := lucye_global_com_defconfig
 
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
