@@ -5,11 +5,11 @@ USE_CAMERA_STUB := true
 
 
 
-TARGET_KERNEL_SOURCE := kernel/lge/msm8996
+#TARGET_KERNEL_SOURCE := kernel/lge/msm8996
 #TARGET_KERNEL_CONFIG := lucye_global_com_defconfig
-TARGET_KERNEL_ARCH := arm64
-TARGET_KERNEL_HEADER_ARCH := arm64
-TARGET_KERNEL_DEVICE_DEFCONFIG := lucye_global_com_defconfig
+#TARGET_KERNEL_ARCH := arm64
+#TARGET_KERNEL_HEADER_ARCH := arm64
+#TARGET_KERNEL_DEVICE_DEFCONFIG := lucye_global_com_defconfig
 
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
@@ -46,7 +46,7 @@ BOARD_HAS_LARGE_FILESYSTEM := true
 TARGET_USERIMAGES_USE_EXT4 := true
 TARHET_USERIMAGES_USE_F2FS := true
 
-#TARGET_PREBUILT_KERNEL := device/lge/h870/kernel
+TARGET_PREBUILT_KERNEL := device/lge/h870/kernel
 #COMMENT THIS OUT FOR NOW
 #BOARD_HAS_NO_SELECT_BUTTON := true
 
@@ -67,7 +67,7 @@ TW_SCREEN_BLANK_ON_BOOT := true
 TW_INCLUDE_NTFS_3G := true
 
 # exFAT drivers included in the kernel
-TW_NO_EXFAT_FUSE := true
+#TW_NO_EXFAT_FUSE := true
 
 # No love for the wicked (device ships with M)
 TW_EXCLUDE_SUPERSU := true
