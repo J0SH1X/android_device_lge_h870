@@ -26,6 +26,9 @@ TARGET_2ND_CPU_VARIANT := cortex-a53
 ARCH_ARM_HAVE_TLS_REGISTER := true
 
 TARGET_BOOTLOADER_BOARD_NAME := h870
+#Try to enable gpu support
+TARGET_BOARD_PLATFORM_GPU := qcom-adreno530
+
 
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 user_debug=31 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 cma=32M@0-0xffffffff androidboot.hardware=lucye androidboot.bootdevice=624000.ufshc androidboot.selinux=permissive
 BOARD_KERNEL_BASE := 0x80000000
