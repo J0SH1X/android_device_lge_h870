@@ -14,6 +14,5 @@
 # /modem and /persist are added for flashing OTA files
 /modem		emmc	/dev/block/bootdevice/by-name/modem	flags=display="Modem";flashimg
 /persist	emmc	/dev/block/bootdevice/by-name/persist	flags=display="Persist";flashimg
-/external_sd	vfat	/dev/block/mmcblk1p1 /dev/block/mmcblk1	flags=display="Micro SDcard ";storage;wipeingui;removable;encryptable=/dev/block/bootdevice/by-name/encrypt
-#/external_sd vfat /dev/block/mmcblk1p1 /dev/block/mmcblk1 flags=display="Micro SDCard";storage;wipeingui;removable;encryptable=/dev/block/bootdevice/by-name/encrypt
+/external_sd vfat /dev/block/mmcblk0p1 /dev/block/mmcblk0 flags=display="Micro SDcard";storage;wipeingui;removable;encryptable=/dev/block/bootdevice/by-name/encrypt
 /usb-otg vfat /dev/block/sdh1 /dev/block/sdh flags=display="USB-OTG";storage;wipeingui;removable
