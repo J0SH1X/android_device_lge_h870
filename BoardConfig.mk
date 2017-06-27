@@ -50,9 +50,6 @@ TARGET_USERIMAGES_USE_EXT4 := true
 TARHET_USERIMAGES_USE_F2FS := true
 
 TARGET_PREBUILT_KERNEL := device/lge/h870/kernel
-#COMMENT THIS OUT FOR NOW
-#BOARD_HAS_NO_SELECT_BUTTON := true
-
 
 
 
@@ -68,9 +65,6 @@ TW_MAX_BRIGHTNESS := 255
 TW_DEFAULT_BRIGHTNESS := 149
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_INCLUDE_NTFS_3G := true
-
-# exFAT drivers included in the kernel
-#TW_NO_EXFAT_FUSE := true
 
 # No love for the wicked (device ships with M)
 TW_EXCLUDE_SUPERSU := true
