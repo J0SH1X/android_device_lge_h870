@@ -5,9 +5,6 @@ on init
     chmod 0664 /dev/ion
     chown system system /dev/ion
 
-on property:ro.crypto.state=encrypted
-    start sbinqseecomd
-
 # separate copy needed to use /sbin/linker64 instead of /system/bin/linker64
 service sbinqseecomd /sbin/qseecomd
     oneshot
@@ -15,6 +12,10 @@ service sbinqseecomd /sbin/qseecomd
     user root
     group root
     seclabel u:r:recovery:s0
+
+on property:ro.crypto.state=encrypted
+    start sbinqseecomd
+
 
 on property:ro.crypto.fs_crypto_blkdev=/dev/block/dm-0
     stop sbinqseecomd
