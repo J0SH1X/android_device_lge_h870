@@ -8,6 +8,12 @@
         {       "remote":"github",
                 "repository":"LineageOS/android_device_generic_goldfish",
                 "target_path":"device/generic/goldfish",
-                "revision":"cm-13.0"
+                "revision":"cm-14.1"
         }
+        {       "remote":"github",
+                "repository":"LineageOS/android_vendor_qcom_opensource_cryptfs_hw",
+                "target_path":"vendor/qcom/opensource/cryptfs_hw",
+                "revision":"cm-14.1"
+        }
+
 ]

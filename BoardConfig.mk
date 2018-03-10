@@ -66,11 +66,16 @@ TW_DEFAULT_BRIGHTNESS := 149
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_INCLUDE_NTFS_3G := true
 TW_EXCLUDE_SUPERSU := true
+
 # Encryption support
+TARGET_CRYPTFS_HW_PATH := vendor/qcom/opensource/cryptfs_hw
 TW_INCLUDE_CRYPTO := true
-#TARGET_HW_DISK_ENCRYPTION := true
-#TARGET_KEYMASTER_WAIT_FOR_QSEE := true
+TARGET_HW_DISK_ENCRYPTION := true
+TARGET_KEYMASTER_WAIT_FOR_QSEE := true
 #TW_CRYPTO_USE_SYSTEM_VOLD := qseecomd
+
+#PRODUCT_COPY_FILES += \
+#$(LOCAL_PATH)/recovery/libcryptfs_hw.so:system/vendor/lib64/libcryptfs_hw.so
 
 #FIX LINEAGEOTA *YAY*
 TW_IGNORE_MISC_WIPE_DATA := true
