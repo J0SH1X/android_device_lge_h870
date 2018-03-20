@@ -32,3 +32,5 @@ PRODUCT_BRAND := lge
 PRODUCT_MODEL := LG-H870
 PRODUCT_MANUFACTURER := LGE
 
+
+PRODUCT_COPY_FILES += device/lge/$(PRODUCT_DEVICE)/recovery.fstab:recovery/root/etc/twrp.fstab
